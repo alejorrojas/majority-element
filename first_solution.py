@@ -1,5 +1,5 @@
+# Grupo BigBrain 🧠"
 def first_solution():
-    print("Grupo BigBrain 🧠")
     list = [1, 1, 2, 3, 1]
     reference_values = {}
     max_value_key = None
