@@ -1,4 +1,5 @@
 def first_solution():
+    print("Grupo BigBrain 🧠")
     list = [1, 1, 2, 3, 1]
     reference_values = {}
     max_value_key = None
@@ -10,12 +11,10 @@ def first_solution():
         else:
             reference_values[element] = 1
 
-        # Update the most frequent element on the same loop, avoiding the need to iterate through the dictionary again
         if reference_values[element] > max_value:
             max_value = reference_values[element]
             max_value_key = element
         
-        #Early return if the most frequent value is greater than half of the list
         if max_value > len(list) / 2:
             print("The most frequent value is: ", max_value_key, "with a count of: ", max_value)
             break
